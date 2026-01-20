@@ -1,0 +1,38 @@
+url = https://www.kaggle.com/datasets/paytonfisher/sp-500-companies-with-financial-information
+
+DDL = cur.execute("""CREATE TABLE table_m3 (
+            "Symbol" VARCHAR(10) PRIMARY KEY,
+    	    "Name" VARCHAR(255),
+    	    "Sector" VARCHAR(100),
+     	    Price FLOAT,
+     	    Price/Earnings FLOAT,
+     	    Dividend Yield FLOAT,
+     	    Earnings/Share FLOAT,
+     	    52 Week Low FLOAT,
+     	    52 Week High FLOAT,
+     	    Market Cap FLOAT,
+     	    EBITDA FLOAT,
+     	    Price/Sales FLOAT,
+     	    Price/Book FLOAT,
+    	    "SEC Filings" VARCHAR(255)
+            )
+        """)
+
+DML =  for index, row in df.iterrows():
+        try:
+            cur.execute("INSERT INTO table_m3 VALUES (%s, %s, %s, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %s)", (
+                row["Symbol"],
+                row["Name"],
+                row["Sector"], 
+                row[Price],
+                row[Price/Earnings],
+                row[Dividend Yield],
+                row[Earnings/Share],
+                row[52 Week Low],
+                row[52 Week High],
+                row[Market Cap],
+                row[EBITDA],
+                row[Price/Sales],
+                row[Price/Book],
+                row["SEC Filings"]
+            ))

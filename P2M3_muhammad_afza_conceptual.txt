@@ -1,0 +1,13 @@
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+   NoSQL memungkinkan menyimpan data yang bukan tabular seperti yang biasa digunakan pada SQL. NoSQL memungkinkan penyimpanan data dalam format yang unstructured atau semi-structured, seperti dokumen JSON
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System
+   NoSQL digunakan saat memiliki data yang bersifat dinamis, di mana setiap entri data diperbolehkan memiliki variasi atribut yang berbeda. Ini cocok untuk memproses berbagai jenis informasi tanpa harus terikat pada kolom seperti pada RDBMS
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+   - MongoDB: fleksibel karena data disimpan dalam format Binary JSON
+   - Cassandra: arsitekturnya terdesentralisasi sehingga highly available dan kinerja write yang cepat
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+   Airflow dapat mengautomasi siklus Extract, Transform, Load (ETL) sehingga proses data bisa berjalan otomatis, perlu dilakukan validasi yang dapat dilakukan dengan Great Expectation untuk memastikan kualitas data
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+    Great Expectation adalah tools yang dapat menjaga kualitas dari data, di mana tool ini dapat berperan dalam memvalidasi setelah rangkaian proses ETL dijalankan, sehingga data terverifikasi
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri
+    Batch processing adalah metode automasi pengolahan data yang bekerja berdasarkan waktu yang telah ditetapkan, baik dengan interval maupun schedule
