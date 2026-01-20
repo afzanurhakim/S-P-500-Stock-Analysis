@@ -2,7 +2,7 @@
 S&P 500 Stock Analysis for Investment Purpose
 
 ## Repository Outline
-1. description.md - Penjelasan gambaran umum project
+1. README.md - Penjelasan gambaran umum project
 2. P2M3_muhammad_afza_conceptual.txt - Notepad berisi jawaban untuk pertanyaan conceptual
 3. P2M3_muhammad_afza_DAG_graph.jpg - Flowchart ETL yang berjalan di airflow
 4. P2M3_muhammad_afza_ddl.txt - Query pembuatan table dan memasukkan baris data ke PostgreSQL
@@ -69,4 +69,5 @@ Visualization
 - Kibana
 
 ## Reference
+
 URL dataset =  https://www.kaggle.com/datasets/paytonfisher/sp-500-companies-with-financial-information
